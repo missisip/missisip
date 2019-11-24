@@ -1,32 +1,122 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 <head>
 <meta charset="utf-8">
 <title>ReFresh | Contato</title>
 <link href="ReFresh.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<script>
+		function myFunction() {
+  var x = document.getElementById("meuHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+	</script>
+	
+	
+	
 </head>
 
 <body>
-	<div ><img id="barraCima" src="Imagens/Barra de cima.png"></div>
-	<div id="header">
+	<a class="skip-main" href="#main">Skip to main content</a>
+		<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
+	<div ><img id="barraCima" src="barradecima.png" alt=""></div>
+
+	
+	<div class="header" id="meuHeader">
+		<a class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  		</a>
 		
-		<div class="headerEsquerdaDireita">
-		<center>
 		<a href="index.html" class="navbarpad">HOME</a>
-		<img class="estrela"  src="Imagens/Caminho 70.png">
+		<div class="containerEstrela"><img class="estrela"  src="estrela.png" alt=""></div>
 		<a href="bebida.html" class="navbarpad">BEBIDA</a>
-		</center>
-		</div>
+		
+		
 		<div id="logoHeader">
-		<img src="Imagens/Grupo 5.png">
+		<img  id="logo" src="logo.png" alt="">
 		</div>
-		<div class="headerEsquerdaDireita">
-			<center>
+		
+		
 		<a href="contato.html" class="navbarpad">CONTATO</a>
-		<img  class="estrela" src="Imagens/Caminho 70.png">
-		<a href="sobrenos.html" class="navbarpad">SOBRE NÓS</a>
-			</center>
+		<div class="containerEstrela"><img class="estrela"  src="estrela.png" alt=""></div>
+		<a href="sobrenos.html" class="navbarpad">SOBRE</a>
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	<main>
+	<div class="container_formulario">
+	<div class="container2">
+  		<form>
+    	<label for="fname">Nome</label>
+		<input type="text" id="fname" name="firstname" placeholder="Seu nome">
+
+		<label for="lname">Sobrenome</label>
+ 		<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+
+		<label for="cellp">Celular</label>
+ 		<input type="text" id="cellp" name="cellphone" placeholder="Digite seu celular">
+
+  		<label for="subject"> Assunto</label>
+  		<textarea id="subject" name="assunto" placeholder="Digite alguma cosia" style="height:200px"></textarea>
+
+  		<input type="submit" value="Enviar">
+ 		</form>
+	</div>
+	<div class="container_contatos" id="main">
+		Nossos Contatos
+		<br>
+		<br>
+		<h1>Email</h1>
+		<p>contato@re-fresh.com</p>
+		<br>
+		<br>
+		<h1>Telefones</h1>
+		<p>+55 11 1234-5678</p>
+		<p>+55 11 9 1234-5678</p>
+		<br>
+		<br>
+		<h1>Endereço</h1>
+			<p>Rua Marquês de Paranaguá, 111 - consolação</p><br>
+		<p>São Paulo - SP</p>
+	</div>
+</div>
+	</main>
+	
+	<div id="containerBaixo">
+	<div id="barraBaixo">
+		<div id="containerVermelho">
+		<div class="fb-page" data-href="https://www.facebook.com/ReFresh-106167067520980/" data-tabs="" data-width="" data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ReFresh-106167067520980/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ReFresh-106167067520980/">ReFresh</a></blockquote></div>
+		<div>
+			<label for="newsteller" class="bold">Assine nosso Newsteller!</label>
+ 		<input type="text" id="newsteller" name="emailzin" placeholder="E-mail">
+		</div>
+		<div>
+			<p class="bold">Acesse</p>
+			<p><a href="index.html" class="acesse">Home</a></p>
+			<p><a href="bebida.html" class="acesse">Bebida</a></p>
+			<p><a href="contato.html" class="acesse">Contato</a></p>
+			<p><a href="sobrenos.html" class="acesse">Sobre nós</a></p>
+		</div>
+		</div>
 		</div>
 	</div>
+			<div id="footer">
+			
+				©Copyright 2019 ReFresh - Todos os direitos reservados
+			
+		</div>
 </body>
 </html>

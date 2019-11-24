@@ -1,32 +1,112 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 <head>
 <meta charset="utf-8">
 <title>ReFresh | Bebida</title>
 <link href="ReFresh.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		function myFunction() {
+			var x = document.getElementById("meuHeader");
+			if (x.className === "header") {
+				x.className += " responsive";
+				} 
+			else {
+				x.className = "header";
+  				}
+
+			}
+		
+	</script>
 </head>
 
 <body>
-	<div ><img id="barraCima" src="Imagens/Barra de cima.png"></div>
-	<div id="header">
+	<a class="skip-main" href="#main">Skip to main content</a>
+		<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
+	<div ><img id="barraCima" src="barradecima.png" alt=""></div>
+	
+	
+	<div class="header" id="meuHeader">
+		<a class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
+  		</a>
 		
-		<div class="headerEsquerdaDireita">
-		<center>
 		<a href="index.html" class="navbarpad">HOME</a>
-		<img class="estrela"  src="Imagens/Caminho 70.png">
+		<div class="containerEstrela"><img class="estrela"  src="estrela.png" alt=""></div>
 		<a href="bebida.html" class="navbarpad">BEBIDA</a>
-		</center>
-		</div>
+		
+		
 		<div id="logoHeader">
-		<img src="Imagens/Grupo 5.png">
+		<img  id="logo" src="logo.png" alt="">
 		</div>
-		<div class="headerEsquerdaDireita">
-			<center>
+		
+		
 		<a href="contato.html" class="navbarpad">CONTATO</a>
-		<img  class="estrela" src="Imagens/Caminho 70.png">
-		<a href="sobrenos.html" class="navbarpad">SOBRE NÓS</a>
-			</center>
+		<div class="containerEstrela"><img class="estrela"  src="estrela.png" alt=""></div>
+		<a href="sobrenos.html" class="navbarpad">SOBRE</a>
+		
+		
+	</div>
+	
+	
+	<div id="main" class="metodo">
+		<div class="itemsMetodo">
+			<img src="possui-uma-fabrica-de-bebidas-e-laticínios-saiba-qual-impressora-e-a-mais-adequada-700x400.png" alt="Imagem de uma linha de produção de bebidas da ReFresh">
+		</div>
+		<div class="itemsMetodo">
+			<h2 class="titulo">NOSSO</h2>
+			<h1 class="subtitulo">MÉTODO</h1>
+			<div class="texto">
+				<p>A ReFresh é uma marca que está atenta aos temas atuais como meio ambiente e poluição. Por isso, nossas latinhas e garrafas são feitas de alumínio e vidro reciclados.</p>
+				<p>Nossa fábrica, localizada em São Paulo (SP) trabalha com uma linha de produção totalmente sustentável. A maior parte da nossa matéria prima vem de materiais reciclado. Vidro e alúminio são coletados e reciclados para fazer nossas latinhas e garrafas. As embalagens de plástico são feitas de um material biodegradavel.</p>
+				<p>Para a coleta desse material, fizemos parcerias com diversas empresas e pessoas que coletam esses residuos. Pagamos uma quantia equivalente ao peso entregado do material.</p>
+			</div>
 		</div>
 	</div>
+	
+	
+	
+	
+	
+	<div class="metodo">
+		<div class="itemsMetodo">
+			<h2 class="titulo">NOSSO</h2>
+			<h1 class="subtitulo">SABOR</h1>
+			<div class="texto">
+				<p>Fundador da bebida, Eduardo Aoki em busca de uma bebida refrescante e gaseificada que ao mesmo tempo fosse moderna, mas que trouxesse o gostinho de cola da sua infância nos anos 80, realizou diversos testes até chegar em sua fórmula natural, sem conservantes e acessível a todos.</p>
+
+				<p>Uma bebida 100% vegana, nascida em São Paulo e sendo espalhada pelo Brasil inteiro, contagia os brasileiros até nos hoje, trazendo alegria nas reuniões de amigos e familiares.</p>
+			</div>
+		</div>
+
+	</div>
+	
+	
+	
+	
+<div id="containerBaixo">
+	<div id="barraBaixo">
+		<div id="containerVermelho">
+		<div class="fb-page" data-href="https://www.facebook.com/ReFresh-106167067520980/" data-tabs="" data-width="" data-height="" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ReFresh-106167067520980/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ReFresh-106167067520980/">ReFresh</a></blockquote></div>
+		<div>
+			<label for="newsteller" class="bold">Assine nosso Newsteller!</label>
+ 		<input type="text" id="newsteller" name="emailzin" placeholder="E-mail">
+		</div>
+		<div>
+			<p class="bold">Acesse</p>
+			<p><a href="index.html" class="acesse">Home</a></p>
+			<p><a href="bebida.html" class="acesse">Bebida</a></p>
+			<p><a href="contato.html" class="acesse">Contato</a></p>
+			<p><a href="sobrenos.html" class="acesse">Sobre nós</a></p>
+		</div>
+		</div>
+		</div>
+	</div>
+			<div id="footer">
+			
+				©Copyright 2019 ReFresh - Todos os direitos reservados
+			
+		</div>
 </body>
 </html>
